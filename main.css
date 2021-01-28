@@ -15,7 +15,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background: url("images/sitebg.jpg") no-repeat center fixed;
+    background: url("images/sitebg2.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -33,13 +33,14 @@ a {
 p {
     font-size: 1.8rem;
     font-weight: 300;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     word-spacing: 2px;
 }
 
 img {
     width: 100%;
 }
+
 
 /*End global*/
 
@@ -230,18 +231,19 @@ li {
 }
 
 .rubber-letter {
-    transition: 0.2s ease-in-out color;
+    transition: 2s ease-in-out color;
 }
 
 .rubber-letter:hover {
-    display:inline-block;
-    cursor:pointer;
-    animation: rubberLater 1s ease-in-out forwards;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    display: inline-block;
+    cursor: pointer;
+    /* animation: rubberLater 1s ease-in-out forwards; */
+    background: linear-gradient(to top, #cc99cc, #660066);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
+
+
 /* 
 .landing-text .s1:hover,
 .landing-text .s1:focus {
@@ -293,8 +295,8 @@ li {
 .about-me-info p {
     font-size: 1.5rem;
     color: #f8f1ff;
-    letter-spacing: 3px;
-    word-spacing: 2px;
+    letter-spacing: 2px;
+    word-spacing: 1.5px;
     text-align: center;
 }
 
@@ -309,6 +311,15 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 65%;
+}
+
+.img-container-blurred-edge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 10px 10px grey;
 }
 
 .emoji {
@@ -386,6 +397,7 @@ li {
     grid-gap: 2.5rem;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10rem;
 }
 
 .my-education i {
@@ -421,7 +433,6 @@ li {
 /* Start skills */
 
 .skills {
-    margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
@@ -485,9 +496,12 @@ li {
 
 
 /*Start projects*/
+
 .projects {
     text-align: center;
+    margin-bottom: 10rem;
 }
+
 .projects h6 {
     margin-bottom: 5rem;
 }
@@ -536,8 +550,9 @@ li {
 /*Start timeline*/
 
 .timeline {
-    transform : translateX(7rem);
+    transform: translateX(7rem);
 }
+
 .timeline ul {
     border-left: 2px solid #656176;
     border-radius: 0.3rem;
@@ -644,7 +659,6 @@ li {
 
 /*Start Volunteer */
 
-
 .volunteer {
     text-align: center;
 }
@@ -656,7 +670,7 @@ li {
     padding: 10px 0;
     box-sizing: border-box;
     text-align: center;
-    display : inline-block;
+    display: inline-block;
 }
 
 .timeline2 ul {
@@ -801,8 +815,6 @@ li {
 
 /*Start media queries*/
 
-
-
 @media screen and (max-width:500px) {
     body {
         background: url("images/sitebg.jpg") no-repeat center fixed;
@@ -810,12 +822,11 @@ li {
         width: 100%;
         height: 100%;
     }
-
     .header {
         height: 10rem;
     }
     .section-heading p {
-        font-size : 1.2rem;
+        font-size: 1.2rem;
     }
     .menu-toggler {
         top: 2rem;
@@ -830,53 +841,46 @@ li {
     .nav-link {
         font-size: 3.5rem;
     }
-    
     .icon-container {
         display: inline-block;
     }
-
-
     .my-education {
         margin-top: 5rem;
         display: grid;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
-    
     .my-education i {
         font-size: 5rem;
         text-align: center;
         margin: auto;
     }
-    
     .my-education h1 {
         margin-top: 1rem;
         font-size: 2rem;
     }
-    
     .my-education h6 {
         font-size: 1rem;
     }
-    
-    
     .about .container {
         flex-direction: column;
     }
     .profile-img {
         margin: 0 0 7rem 0;
     }
-
     .skills-item {
-        flex-direction : column;
+        flex-direction: column;
         display: block;
     }
-
     .centered {
         display: block;
         width: inherit;
     }
     .experience {
         text-align: center;
+    }
+    .experience .container {
+        margin-bottom: 50rem;
     }
     .timeline {
         transform: translateX(5rem);
@@ -893,33 +897,27 @@ li {
     .up {
         right: 2rem;
     }
-
     .projects h6 {
         margin-bottom: 5rem;
     }
-    
     .projects-item {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 5rem;
     }
-    
     .projects-item:last-child {
         margin-bottom: 0;
     }
-    
     .projects-img {
         flex: 1;
         width: 50rem;
         height: auto;
         object-fit: cover;
     }
-    
     .projects-description {
         flex: 1;
     }
-    
     .projects-description h1 {
         font-size: 2rem;
         color: #3883ff;
@@ -927,50 +925,46 @@ li {
         font-weight: 300;
         margin-bottom: 1rem;
     }
-    
     .projects-description h6 {
         font-size: 4rem;
         font-weight: 300;
         margin: 1rem 0;
         opacity: 0.3;
-    } 
-    
+    }
     .timeline2 {
         width: inherit;
     }
     .timeline2 ul li h1 {
-        font-size : 2rem;
+        font-size: 2rem;
     }
-
     .timeline2 ul li p {
-        font-size : 1.2rem;
+        font-size: 1.2rem;
     }
-
 }
 
 @keyframes rubberLater {
-    
     0% {
-        transform : scale3d(1,1,1);
+        transform: scale3d(1, 1, 1);
     }
     30% {
-        transform : scale3d(1.25,0.75,1);
+        transform: scale3d(1.25, 0.75, 1);
     }
     40% {
-        transform : scale3d(0.75,1.25,1);
+        transform: scale3d(0.75, 1.25, 1);
     }
     50% {
-        transform : scale3d(1.15,0.85,1);
+        transform: scale3d(1.15, 0.85, 1);
     }
     65% {
-        transform : scale3d(0.95,1.05,1);
+        transform: scale3d(0.95, 1.05, 1);
     }
     75% {
-        transform : scale3d(1.05,0.95,1);
+        transform: scale3d(1.05, 0.95, 1);
     }
     100% {
-        transform : scale3d(1,1,1);
+        transform: scale3d(1, 1, 1);
     }
 }
+
 
 /*End media queries
