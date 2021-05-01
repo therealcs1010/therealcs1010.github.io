@@ -71,6 +71,52 @@ p {
 	color: crimson;
 }
 
+svg.radial-progress {
+	height: auto;
+	max-width: 200px;
+	padding: 1em;
+	transform: rotate(-90deg);
+	width: 100%;
+}
+  
+svg.radial-progress circle {
+	fill: rgba(0,0,0,0);
+	stroke: #fff;
+	stroke-dashoffset: 219.91148575129; 
+	stroke-width: 10;
+}
+  
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+  
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+  
+svg.radial-progress text {
+	fill: #fff;
+	text-anchor: middle;
+}
+
+svg.radial-progress:nth-of-type(6n+1) circle {
+    stroke: #fddc32;
+}
+
+svg.radial-progress:nth-of-type(6n+2) circle {
+    stroke: #83e4e2;
+}
+
+svg.radial-progress:nth-of-type(6n+3) circle {
+    stroke: #a2ed56;
+    
+}
+
+svg.radial-progress:nth-of-type(6n+4) circle {
+    stroke: #fca858;
+}
+
+svg.radial-progress:nth-of-type(6n+5) circle {
+	stroke: #fd6470;
+}
+
+
 /* Header section */
 #header {
 	position: fixed;
@@ -198,52 +244,7 @@ p {
 }
 /* End Header section */
 
-/* home section styling */
-.home{
-    display: flex;
-    background: url("./img/hero-bg.png") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-}
-.home .max-width{
-    margin: auto 0 auto 30px;
-}
-.home .home-content .text-1{
-    font-size: 27px;
-}
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-.home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
-}
-.home .home-content a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: crimson;
-    background: none;
-}
+
 
 /* start Section */
 #start {
@@ -324,29 +325,29 @@ p {
 
 /* End start Section */
 
-/* Services Section */
-#services .services {
+/* skills Section */
+#skills .skills {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#services .service-top {
+#skills .service-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
-#services .service-bottom {
+#skills .service-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
-#services .service-item {
+#skills .service-item {
 	flex-basis: 80%;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	padding: 30px;
@@ -358,7 +359,7 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
-#services .service-item::after {
+#skills .service-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -369,22 +370,86 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
-#services .service-bottom .icon {
+#skills .service-bottom .icon {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
 }
-#services .service-item h2 {
+#skills .service-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
-#services .service-item p {
+#skills .service-item p {
 	color: white;
 	text-align: left;
 }
-/* End Services Section */
+/* End skills Section */
+
+
+/* skills Section */
+#proficiency .proficiency {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#proficiency .proficiency-top {
+	max-width: 500px;
+	margin: 0 auto;
+}
+#proficiency .proficiency-bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+#proficiency .proficiency-item {
+	flex-basis: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(./img/img-1.png);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#proficiency .proficiency-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
+#proficiency .proficiency-bottom .icon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 20px;
+}
+#proficiency .proficiency-item h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#proficiency .proficiency-item p {
+	color: white;
+	text-align: left;
+}
+/* End skills Section */
+
 
 /* Projects section */
 #projects .projects {
@@ -642,12 +707,19 @@ p {
 	}
 	/* End start */
 
-	/* Services Section */
-	#services .service-bottom .service-item {
+	/* skills Section */
+	#skills .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
+	/* End skills Section */
+
+	/* skills Section */
+	#proficiency .proficiency-bottom .proficiency-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End skills Section */
 
 	/* Project */
 	#projects .project-item {
@@ -755,7 +827,11 @@ p {
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
+	#skills .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+	#proficiency .proficiency-bottom .proficiency-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}

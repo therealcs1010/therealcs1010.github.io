@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <title>Yu Jie's Portfolio</title>
 </head>
 
@@ -31,7 +31,8 @@
           <ul>
             <li><a href="#start" data-after="Home">Home</a></li>
             <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#skills" data-after="Service">Skills</a></li>
+            <li><a href="#skills" data-after="skills">Skills</a></li>
+            <li><a href="#proficiency" data-after="skills">Proficiency</a></li>
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
@@ -82,9 +83,10 @@
 
 
   <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
+  <section id="skills">
+    <div class="skills container">
       <div class="service-top">
+        <br></br>
         <h1 class="section-title">Sk<span>i</span>lls</h1>
         <p>As a lifelong idealist, I believe in constantly expanding my skillset through professional and personal
           experiences.
@@ -355,8 +357,8 @@
               </g>
             </svg></div>
           <h2>Leadership</h2>
-          <p>I was the ECE Undergraduate Student Council President for 2 years, where I was tasked with major events
-            such as the Career Fair and Graduation Party. I have also been teaching for 3 semesters
+          <p>I was the ECE Undergraduate Student Council President for two years, where I was tasked with major events
+            such as the Career Fair and Graduation Party. I have also taught CS2040C for three semesters 
             where I was inducted into the Honour List of Student Tutors.
           </p>
         </div>
@@ -497,10 +499,83 @@
   </section>
   <!-- End Service Section -->
 
+
+  <!-- Proficiency Section -->
+  <section id="proficiency">
+    <div class="proficiency container">
+      <div class="proficiency-top">
+        <br></br>
+        <h1 class="section-title">Prof<span>i</span>ciency</h1>
+        <p>Here is a list of skills that I have accumulated over the years, along with my level of proficiency.</p>
+      </div>
+      <div class="proficiency-bottom">
+
+        <div class="proficiency-item">
+          <svg class="radial-progress" data-percentage="92" viewBox="0 0 80 80">
+            <circle class="incomplete" cx="40" cy="40" r="35" id="c1"></circle>
+            <circle class="complete" cx="40" cy="40" r="35" id="c1" style="stroke-dashoffset: 39.58406743523136;"></circle>
+            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">92%</text>
+          </svg>
+          <h2>C/C++</h2>
+        </div>
+        
+        <div class="proficiency-item">
+          <svg class="radial-progress" data-percentage="87" viewBox="0 0 80 80" id ="rp2">
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">87%</text>
+          </svg>
+          <h2>Java/Kotlin</h2>
+        </div>
+
+        <div class="proficiency-item">
+          <svg class="radial-progress" data-percentage="83" viewBox="0 0 80 80">
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">83%</text>
+          </svg>
+          <h2>Python</h2>
+        </div>
+
+        <div class="proficiency-item">
+          <svg class="radial-progress" data-percentage="85" viewBox="0 0 80 80">
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+          </svg>
+          <h2>Verilog</h2>
+        </div>
+
+        <div class="proficiency-item">
+          <svg class="radial-progress" data-percentage="60" viewBox="0 0 80 80">
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">60%</text>
+          </svg>
+          <h2>HTML</h2>
+        </div>
+
+        <div class="proficiency-item">
+          <svg class="radial-progress" data-percentage="40" viewBox="0 0 80 80">
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">40%</text>
+          </svg>
+          <h2>MySQL</h2>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Proficiency Section -->
+
+
+
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
       <div class="projects-header">
+        <br></br>
         <h1 class="section-title">Recent <span>Projects</span></h1>
       </div>
       <div class="all-projects">
@@ -655,6 +730,12 @@
   <!-- End Footer -->
   <script src="./app.js"></script>
   <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous">
+
+</script> 
+
 </body>
 
 </html>
