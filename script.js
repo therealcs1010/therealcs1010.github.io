@@ -1,11 +1,19 @@
-const textE1 = document.querySelector('.rubber-band');
-const text = textE1.textContent;
-const letters = text.split('');
+// $(document).ready(function(){
+//     // typing text animation script
+//     var typed = new Typed(".typing", {
+//         strings: ["Student", "Developer", "Programmer", "Teacher", "Leader"],
+//         typeSpeed: 100,
+//         backSpeed: 60,
+//         loop: true
+//     });
+// });
 
-let html = "";
-
-const makespan = letter => `<span class="rubber-letter">${letter}</span>`
-
-letters.forEach(letter => (html += makespan(letter)));
-
-textE1.innerHTML = html;
+setTimeout(function(){
+    // typing text animation script
+    var typed = new Typed(".typing", {
+        strings: ["Student", "Developer", "Programmer", "Teacher", "Leader"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+}, 4000);

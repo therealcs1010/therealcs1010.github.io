@@ -198,6 +198,53 @@ p {
 }
 /* End Header section */
 
+/* home section styling */
+.home{
+    display: flex;
+    background: url("./img/hero-bg.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 30px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
 /* start Section */
 #start {
 	background-image: url(./img/hero-bg.png);
@@ -232,16 +279,29 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
+
+#start h2 {
+	display: block;
+	width: fit-content;
+	position: relative;
+	font-size: 4rem;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards;
+	animation-delay: 3s;
+}
+
+#start h2 span{
+	color: crimson;
+    font-weight: 500;
+}
+
 #start h1:nth-child(1) {
 	animation-delay: 1s;
 }
 #start h1:nth-child(2) {
 	animation-delay: 2s;
 }
-#start h1:nth-child(3) {
-	animation: text_reveal_name 0.5s ease forwards;
-	animation-delay: 3s;
-}
+
 #start h1 span {
 	position: absolute;
 	top: 0;
