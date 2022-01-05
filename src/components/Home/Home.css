@@ -1,0 +1,5 @@
+.home-container {
+  background: url('../../assets/Home/hero-bg.png') no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+}

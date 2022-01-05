@@ -1,0 +1,229 @@
+.resume-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  height: 100vh;
+  font-family: 'Montserrat';
+  background: url('../../assets/Resume/resume-bg.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.resume-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.resume-card {
+  opacity: 1;
+  background-color: white;
+  display: flex;
+  height: 50vh;
+  width: 1000px;
+  box-shadow: 15px 15px 15px -15px #1f2235;
+  padding-right: 20px;
+}
+
+.resume-bullets {
+  height: 100%;
+  box-shadow: 15px 0 9px -15px #1f2235;
+  width: 320px;
+}
+
+.resume-bullets-details {
+  flex-grow: 1;
+  width: 900px;
+  overflow: hidden;
+  padding: 0 0 0 70px;
+}
+
+.resume-details-carousel {
+  transition: transform 1s ease-out;
+}
+
+.bullet-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.bullets {
+  width: 80%;
+  position: relative;
+  z-index: 2;
+}
+
+.bullet {
+  display: flex;
+  align-items: center;
+  background-color: #1f2235;
+  height: 40px;
+  margin: 15px 0;
+  padding: 0 8px;
+  border-radius: 20px;
+  width: 0px;
+  transition: width 0.6s ease;
+  cursor: pointer;
+}
+
+.bullet-label {
+  font-weight: 500;
+  white-space: nowrap;
+  font-family: 'Montserrat';
+}
+.bullet-logo {
+  height: 16px;
+  margin: 0 30px 0 0;
+}
+.bullet-icons {
+  width: 34px;
+  height: 100%;
+  z-index: 1;
+  background-color: #1f2335;
+  position: absolute;
+}
+
+.selected-bullet {
+  color: white;
+  width: 120%;
+}
+
+.resume-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 50vh;
+  width: 100%;
+}
+
+.resume-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-main-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-bullet {
+  position: absolute;
+  left: -30px;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+span {
+  font-weight: 500;
+}
+
+.resume-sub-heading {
+  font-weight: 600;
+  color: black;
+  margin: 10px 0 0 0;
+}
+.resume-heading-description {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.heading-date {
+  background-color: #00203f;
+  height: 28px;
+  text-align: center;
+  padding: 0px 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 14px;
+  color: white;
+}
+
+.skill-parent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+}
+
+.programming-skill-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.skill-percentage {
+  border: solid 1px black;
+  position: relative;
+  height: 15px;
+  width: 50%;
+  background-color: #00203f;
+}
+
+.skill-percentage .active-percentage {
+  height: 15px;
+  transition: 0.8s ease;
+  position: absolute;
+  background-color: #adefd1;
+}
+
+.skill-parent span {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+@media only screen and (max-width: 1110px) {
+  .resume-card {
+    width: 880px;
+  }
+  .resume-bullets-details {
+    padding: 0 0 0 70px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bullets {
+    width: 90%;
+  }
+  .resume-card {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+    width: 90%;
+  }
+  .resume-bullets-details {
+    height: 360px;
+    width: fit-content;
+    padding: 0;
+  }
+  .resume-bullets {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .selected-bullet {
+    width: 100%;
+  }
+}

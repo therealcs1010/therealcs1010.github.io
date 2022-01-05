@@ -1,0 +1,14 @@
+.go-home-btn {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 1px black;
+  background-color: white;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+}
+
+.go-home-btn:hover {
+  border: solid 1px grey;
+}
