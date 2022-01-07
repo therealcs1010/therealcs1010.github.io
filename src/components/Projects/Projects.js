@@ -127,13 +127,9 @@ export default function Projects (props) {
               ))}
             </OwlCarousel>
           </div>
+          
         </div>
-        <div className='footer-image'>
-          <img
-            src={require('../../assets/Projects/shape-bg.png').default}
-            alt='no internet connection'
-          />
-        </div>
+       
       </section>
     </div>
   )

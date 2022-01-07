@@ -1,5 +1,8 @@
 .home-container {
   background: url('../../assets/Home/hero-bg.png') no-repeat center fixed;
   background-size: cover;
-  height: 100vh;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 100px 0;
 }

@@ -1,14 +1,19 @@
 .projects-container {
-  padding-top: 150px;
-  height: 100vh;
+  padding: 100px 0;
+  min-height: 100vh;
+  font-family: 'Montserrat';
+  display: flex;
+  flex-direction: column;
 }
+
 .projects-section {
-  padding: 80px 0 80px;
+  padding: 2rem 0;
   background-image: url('../../assets/Projects/bg.jpg');
   background-position: center;
   background-attachment: fixed;
   position: relative;
   z-index: 1;
+  height: 50;
 }
 
 .projects-section::before {
@@ -30,7 +35,6 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
-  margin-bottom: -100px;
 }
 
 .footer-image img {
@@ -40,23 +44,20 @@
 
 .projects-section .projects-item {
   background-color: white;
-  padding: 30px;
+  padding: 1rem;
   border-radius: 50px 50px 50px 0px;
 }
 
 .projects-section .projects-item p {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  margin: 0 0 10px;
+  font-size: 1em;
+  line-height: 1.5rem;
 }
 
 .projects-section .projects-info {
   position: relative;
-  padding-left: 80px;
-  padding-top: 5px;
-  margin-bottom: 5px;
-  min-height: 100px;
+  padding-left: 5rem;
+  padding-top: 1rem;
+  height: 6rem;
 }
 
 .projects-section .projects-info img {
@@ -71,28 +72,27 @@
   transition: 1s;
 }
 
-.projects-section .projects-info img:hover {
+/* .projects-section .projects-info img:hover {
   margin-top: 170px;
   transform: scale(5);
   overflow: auto;
   z-index: 999;
-}
+} */
 
 .projects-section .projects-info h5 {
-  font-size: 16px;
   font-weight: 600;
   line-height: 26px;
-  margin: 0 30px 2px;
+  margin: 0 1.5rem 0;
 }
 
 .projects-item {
-  height: 500px;
+  height: 420px;
 }
 
 .projects-libraries {
   height: 50px;
-  padding-top: 5px;
-  font-family: Poppins Semibold;
+  padding-top: 10px;
+  font-weight: 600;
   text-align: center;
   justify-content: space-between;
 }
